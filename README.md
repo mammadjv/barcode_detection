@@ -1,6 +1,5 @@
 # Part 1
-Please check the `barcode_detection.ipynb` notebook.
-If you are not using Google Colab, you can skip the first cell.
+Please check the `barcode_detection.ipynb` notebook for some examples.
 
 There are already some demo results in the notebook, but you can use **Cell 3** to run the pipeline from scratch. Just update **line 5** with the path to your PNG images.
 
@@ -22,7 +21,12 @@ For testing the algorithm type:
 python barcode_detector.py /path/to/pngimage
 ```
 
-I will save the cropped barcode in a file called `./output.png`. Also it prints the barcode ROI coordinates in the rotated image.
+I will save the cropped barcode in a file called `./output.png`. Also, it prints the barcode ROI coordinates in the rotated image.
+
+### Potential improvements
+
+Definitely moving to C++. Also, checking everything within the barcode white patch would increase the precision. Reducing the picture size would help with timing (it's commonly used in detection algorithms).
+
 
 
 # Part 2
