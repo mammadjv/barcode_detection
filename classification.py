@@ -5,10 +5,11 @@ import sys
 import torch
 from torchvision import transforms
 from torch.utils.data import DataLoader
-from barcode_dataset import BarcodeDataset
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import models
+
+from barcode_dataset import BarcodeDataset
 
 
 def get_transform_functions():
