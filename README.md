@@ -16,6 +16,13 @@ There are already some demo results in the notebook, but you can use **Cell 3** 
 
 5. We then iFFT that masked frequency space, binarize it, and find the start/end points of the barcode.
 
+For testing the algorithm type:
+
+```
+python barcode_detector.py /path/to/pngimage
+```
+
+I will save the cropped barcode in a file called `./output.png`. Also it prints the barcode ROI coordinates in the rotated image.
 
 
 # Part 2
@@ -134,7 +141,5 @@ For test:
 `
 python classification.py . test
 `
-
-Please be nice with the script :) I didn't strictly check the passed arguments in my code.
 
 To run the code, you'd need numpy, opencv, torchvision, torch, and PIL.
