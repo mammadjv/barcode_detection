@@ -1,8 +1,6 @@
 # Part 1
 Please check the `barcode_detection.ipynb` notebook for some examples.
 
-There are already some demo results in the notebook, but you can use **Cell 3** to run the pipeline from scratch. Just update **line 5** with the path to your PNG images.
-
 ### Algorithm Overview
 
 1. The algorithm first transforms the image to the frequency domain and finds the spatial angle at which the barcode is oriented. This works because the barcode is typically the most periodic structure in the image, so its orientation can be inferred from the dominant frequency responses.
