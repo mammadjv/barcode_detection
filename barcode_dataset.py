@@ -3,8 +3,8 @@ import os
 from PIL import Image
 import numpy as np
 import cv2
-
 from torch.utils.data import Dataset
+
 from barcode_extractor import find_barcode
 
 
